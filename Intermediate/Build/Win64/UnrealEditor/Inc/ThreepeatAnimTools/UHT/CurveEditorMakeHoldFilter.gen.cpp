@@ -5,40 +5,72 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "ThreepeatAnimTools/Public/CurveEditorMakeHoldFilter.h"
+#include "CurveEditorMakeHoldFilter.h"
+
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+
 void EmptyLinkFunctionForGeneratedCodeCurveEditorMakeHoldFilter() {}
 
-// Begin Cross Module References
+// ********** Begin Cross Module References ********************************************************
 CURVEEDITOR_API UClass* Z_Construct_UClass_UCurveEditorFilterBase();
 THREEPEATANIMTOOLS_API UClass* Z_Construct_UClass_UCurveEditorMakeHoldFilter();
 THREEPEATANIMTOOLS_API UClass* Z_Construct_UClass_UCurveEditorMakeHoldFilter_NoRegister();
 UPackage* Z_Construct_UPackage__Script_ThreepeatAnimTools();
-// End Cross Module References
+// ********** End Cross Module References **********************************************************
 
-// Begin Class UCurveEditorMakeHoldFilter
+// ********** Begin Class UCurveEditorMakeHoldFilter ***********************************************
 void UCurveEditorMakeHoldFilter::StaticRegisterNativesUCurveEditorMakeHoldFilter()
 {
 }
-IMPLEMENT_CLASS_NO_AUTO_REGISTRATION(UCurveEditorMakeHoldFilter);
+FClassRegistrationInfo Z_Registration_Info_UClass_UCurveEditorMakeHoldFilter;
+UClass* UCurveEditorMakeHoldFilter::GetPrivateStaticClass()
+{
+	using TClass = UCurveEditorMakeHoldFilter;
+	if (!Z_Registration_Info_UClass_UCurveEditorMakeHoldFilter.InnerSingleton)
+	{
+		GetPrivateStaticClassBody(
+			StaticPackage(),
+			TEXT("CurveEditorMakeHoldFilter"),
+			Z_Registration_Info_UClass_UCurveEditorMakeHoldFilter.InnerSingleton,
+			StaticRegisterNativesUCurveEditorMakeHoldFilter,
+			sizeof(TClass),
+			alignof(TClass),
+			TClass::StaticClassFlags,
+			TClass::StaticClassCastFlags(),
+			TClass::StaticConfigName(),
+			(UClass::ClassConstructorType)InternalConstructor<TClass>,
+			(UClass::ClassVTableHelperCtorCallerType)InternalVTableHelperCtorCaller<TClass>,
+			UOBJECT_CPPCLASS_STATICFUNCTIONS_FORCLASS(TClass),
+			&TClass::Super::StaticClass,
+			&TClass::WithinClass::StaticClass
+		);
+	}
+	return Z_Registration_Info_UClass_UCurveEditorMakeHoldFilter.InnerSingleton;
+}
 UClass* Z_Construct_UClass_UCurveEditorMakeHoldFilter_NoRegister()
 {
-	return UCurveEditorMakeHoldFilter::StaticClass();
+	return UCurveEditorMakeHoldFilter::GetPrivateStaticClass();
 }
 struct Z_Construct_UClass_UCurveEditorMakeHoldFilter_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * \n */" },
+#endif
 		{ "DisplayName", "Threepeat - Make Hold" },
 		{ "IncludePath", "CurveEditorMakeHoldFilter.h" },
 		{ "ModuleRelativePath", "Public/CurveEditorMakeHoldFilter.h" },
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bHoldOnLast_MetaData[] = {
 		{ "Category", "Settings" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** If true, use the last key as the old value (defaults to using first key value)*/" },
+#endif
 		{ "ModuleRelativePath", "Public/CurveEditorMakeHoldFilter.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "If true, use the last key as the old value (defaults to using first key value)" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bOvershoot_MetaData[] = {
 		{ "Category", "Settings" },
@@ -56,10 +88,14 @@ struct Z_Construct_UClass_UCurveEditorMakeHoldFilter_Statics
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bOvershootPrerollHistorySeconds_MetaData[] = {
 		{ "Category", "Settings" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** how many selected keys before the hold should start (must be > 1 for overshoot to work)*/" },
+#endif
 		{ "EditCondition", "bOvershoot" },
 		{ "ModuleRelativePath", "Public/CurveEditorMakeHoldFilter.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "how many selected keys before the hold should start (must be > 1 for overshoot to work)" },
+#endif
 	};
 #endif // WITH_METADATA
 	static void NewProp_bHoldOnLast_SetBit(void* Obj);
@@ -125,24 +161,21 @@ UClass* Z_Construct_UClass_UCurveEditorMakeHoldFilter()
 	}
 	return Z_Registration_Info_UClass_UCurveEditorMakeHoldFilter.OuterSingleton;
 }
-template<> THREEPEATANIMTOOLS_API UClass* StaticClass<UCurveEditorMakeHoldFilter>()
-{
-	return UCurveEditorMakeHoldFilter::StaticClass();
-}
 DEFINE_VTABLE_PTR_HELPER_CTOR(UCurveEditorMakeHoldFilter);
 UCurveEditorMakeHoldFilter::~UCurveEditorMakeHoldFilter() {}
-// End Class UCurveEditorMakeHoldFilter
+// ********** End Class UCurveEditorMakeHoldFilter *************************************************
 
-// Begin Registration
-struct Z_CompiledInDeferFile_FID_Exports_PackagePlugins_tat100_rc6_ThreepeatAnimTools_HostProject_Plugins_ThreepeatAnimTools_Source_ThreepeatAnimTools_Public_CurveEditorMakeHoldFilter_h_Statics
+// ********** Begin Registration *******************************************************************
+struct Z_CompiledInDeferFile_FID_Projects_UE56_TatoolsDev_Plugins_ThreepeatAnimTools_Source_ThreepeatAnimTools_Public_CurveEditorMakeHoldFilter_h__Script_ThreepeatAnimTools_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UCurveEditorMakeHoldFilter, UCurveEditorMakeHoldFilter::StaticClass, TEXT("UCurveEditorMakeHoldFilter"), &Z_Registration_Info_UClass_UCurveEditorMakeHoldFilter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UCurveEditorMakeHoldFilter), 1533877874U) },
+		{ Z_Construct_UClass_UCurveEditorMakeHoldFilter, UCurveEditorMakeHoldFilter::StaticClass, TEXT("UCurveEditorMakeHoldFilter"), &Z_Registration_Info_UClass_UCurveEditorMakeHoldFilter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UCurveEditorMakeHoldFilter), 2970957296U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Exports_PackagePlugins_tat100_rc6_ThreepeatAnimTools_HostProject_Plugins_ThreepeatAnimTools_Source_ThreepeatAnimTools_Public_CurveEditorMakeHoldFilter_h_4018669493(TEXT("/Script/ThreepeatAnimTools"),
-	Z_CompiledInDeferFile_FID_Exports_PackagePlugins_tat100_rc6_ThreepeatAnimTools_HostProject_Plugins_ThreepeatAnimTools_Source_ThreepeatAnimTools_Public_CurveEditorMakeHoldFilter_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Exports_PackagePlugins_tat100_rc6_ThreepeatAnimTools_HostProject_Plugins_ThreepeatAnimTools_Source_ThreepeatAnimTools_Public_CurveEditorMakeHoldFilter_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Projects_UE56_TatoolsDev_Plugins_ThreepeatAnimTools_Source_ThreepeatAnimTools_Public_CurveEditorMakeHoldFilter_h__Script_ThreepeatAnimTools_115459512(TEXT("/Script/ThreepeatAnimTools"),
+	Z_CompiledInDeferFile_FID_Projects_UE56_TatoolsDev_Plugins_ThreepeatAnimTools_Source_ThreepeatAnimTools_Public_CurveEditorMakeHoldFilter_h__Script_ThreepeatAnimTools_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Projects_UE56_TatoolsDev_Plugins_ThreepeatAnimTools_Source_ThreepeatAnimTools_Public_CurveEditorMakeHoldFilter_h__Script_ThreepeatAnimTools_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
-// End Registration
+// ********** End Registration *********************************************************************
+
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

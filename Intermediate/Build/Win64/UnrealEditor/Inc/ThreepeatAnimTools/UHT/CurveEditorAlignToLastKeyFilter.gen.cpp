@@ -5,40 +5,72 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "ThreepeatAnimTools/Public/CurveEditorAlignToLastKeyFilter.h"
+#include "CurveEditorAlignToLastKeyFilter.h"
+
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+
 void EmptyLinkFunctionForGeneratedCodeCurveEditorAlignToLastKeyFilter() {}
 
-// Begin Cross Module References
+// ********** Begin Cross Module References ********************************************************
 CURVEEDITOR_API UClass* Z_Construct_UClass_UCurveEditorFilterBase();
 THREEPEATANIMTOOLS_API UClass* Z_Construct_UClass_UCurveEditorAlignToLastKeyFilter();
 THREEPEATANIMTOOLS_API UClass* Z_Construct_UClass_UCurveEditorAlignToLastKeyFilter_NoRegister();
 UPackage* Z_Construct_UPackage__Script_ThreepeatAnimTools();
-// End Cross Module References
+// ********** End Cross Module References **********************************************************
 
-// Begin Class UCurveEditorAlignToLastKeyFilter
+// ********** Begin Class UCurveEditorAlignToLastKeyFilter *****************************************
 void UCurveEditorAlignToLastKeyFilter::StaticRegisterNativesUCurveEditorAlignToLastKeyFilter()
 {
 }
-IMPLEMENT_CLASS_NO_AUTO_REGISTRATION(UCurveEditorAlignToLastKeyFilter);
+FClassRegistrationInfo Z_Registration_Info_UClass_UCurveEditorAlignToLastKeyFilter;
+UClass* UCurveEditorAlignToLastKeyFilter::GetPrivateStaticClass()
+{
+	using TClass = UCurveEditorAlignToLastKeyFilter;
+	if (!Z_Registration_Info_UClass_UCurveEditorAlignToLastKeyFilter.InnerSingleton)
+	{
+		GetPrivateStaticClassBody(
+			StaticPackage(),
+			TEXT("CurveEditorAlignToLastKeyFilter"),
+			Z_Registration_Info_UClass_UCurveEditorAlignToLastKeyFilter.InnerSingleton,
+			StaticRegisterNativesUCurveEditorAlignToLastKeyFilter,
+			sizeof(TClass),
+			alignof(TClass),
+			TClass::StaticClassFlags,
+			TClass::StaticClassCastFlags(),
+			TClass::StaticConfigName(),
+			(UClass::ClassConstructorType)InternalConstructor<TClass>,
+			(UClass::ClassVTableHelperCtorCallerType)InternalVTableHelperCtorCaller<TClass>,
+			UOBJECT_CPPCLASS_STATICFUNCTIONS_FORCLASS(TClass),
+			&TClass::Super::StaticClass,
+			&TClass::WithinClass::StaticClass
+		);
+	}
+	return Z_Registration_Info_UClass_UCurveEditorAlignToLastKeyFilter.InnerSingleton;
+}
 UClass* Z_Construct_UClass_UCurveEditorAlignToLastKeyFilter_NoRegister()
 {
-	return UCurveEditorAlignToLastKeyFilter::StaticClass();
+	return UCurveEditorAlignToLastKeyFilter::GetPrivateStaticClass();
 }
 struct Z_Construct_UClass_UCurveEditorAlignToLastKeyFilter_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * \n */" },
+#endif
 		{ "DisplayName", "Threepeat - Align to First/Last Key" },
 		{ "IncludePath", "CurveEditorAlignToLastKeyFilter.h" },
 		{ "ModuleRelativePath", "Public/CurveEditorAlignToLastKeyFilter.h" },
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bAlignToFirst_MetaData[] = {
 		{ "Category", "Settings" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** If true, Align to selected keys to line up with the first (lowest frame number) key.  Defaults to the last key. */" },
+#endif
 		{ "ModuleRelativePath", "Public/CurveEditorAlignToLastKeyFilter.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "If true, Align to selected keys to line up with the first (lowest frame number) key.  Defaults to the last key." },
+#endif
 	};
 #endif // WITH_METADATA
 	static void NewProp_bAlignToFirst_SetBit(void* Obj);
@@ -87,24 +119,21 @@ UClass* Z_Construct_UClass_UCurveEditorAlignToLastKeyFilter()
 	}
 	return Z_Registration_Info_UClass_UCurveEditorAlignToLastKeyFilter.OuterSingleton;
 }
-template<> THREEPEATANIMTOOLS_API UClass* StaticClass<UCurveEditorAlignToLastKeyFilter>()
-{
-	return UCurveEditorAlignToLastKeyFilter::StaticClass();
-}
 DEFINE_VTABLE_PTR_HELPER_CTOR(UCurveEditorAlignToLastKeyFilter);
 UCurveEditorAlignToLastKeyFilter::~UCurveEditorAlignToLastKeyFilter() {}
-// End Class UCurveEditorAlignToLastKeyFilter
+// ********** End Class UCurveEditorAlignToLastKeyFilter *******************************************
 
-// Begin Registration
-struct Z_CompiledInDeferFile_FID_Exports_PackagePlugins_tat100_rc6_ThreepeatAnimTools_HostProject_Plugins_ThreepeatAnimTools_Source_ThreepeatAnimTools_Public_CurveEditorAlignToLastKeyFilter_h_Statics
+// ********** Begin Registration *******************************************************************
+struct Z_CompiledInDeferFile_FID_Projects_UE56_TatoolsDev_Plugins_ThreepeatAnimTools_Source_ThreepeatAnimTools_Public_CurveEditorAlignToLastKeyFilter_h__Script_ThreepeatAnimTools_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UCurveEditorAlignToLastKeyFilter, UCurveEditorAlignToLastKeyFilter::StaticClass, TEXT("UCurveEditorAlignToLastKeyFilter"), &Z_Registration_Info_UClass_UCurveEditorAlignToLastKeyFilter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UCurveEditorAlignToLastKeyFilter), 777808789U) },
+		{ Z_Construct_UClass_UCurveEditorAlignToLastKeyFilter, UCurveEditorAlignToLastKeyFilter::StaticClass, TEXT("UCurveEditorAlignToLastKeyFilter"), &Z_Registration_Info_UClass_UCurveEditorAlignToLastKeyFilter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UCurveEditorAlignToLastKeyFilter), 4179933940U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Exports_PackagePlugins_tat100_rc6_ThreepeatAnimTools_HostProject_Plugins_ThreepeatAnimTools_Source_ThreepeatAnimTools_Public_CurveEditorAlignToLastKeyFilter_h_3384734928(TEXT("/Script/ThreepeatAnimTools"),
-	Z_CompiledInDeferFile_FID_Exports_PackagePlugins_tat100_rc6_ThreepeatAnimTools_HostProject_Plugins_ThreepeatAnimTools_Source_ThreepeatAnimTools_Public_CurveEditorAlignToLastKeyFilter_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Exports_PackagePlugins_tat100_rc6_ThreepeatAnimTools_HostProject_Plugins_ThreepeatAnimTools_Source_ThreepeatAnimTools_Public_CurveEditorAlignToLastKeyFilter_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Projects_UE56_TatoolsDev_Plugins_ThreepeatAnimTools_Source_ThreepeatAnimTools_Public_CurveEditorAlignToLastKeyFilter_h__Script_ThreepeatAnimTools_312878111(TEXT("/Script/ThreepeatAnimTools"),
+	Z_CompiledInDeferFile_FID_Projects_UE56_TatoolsDev_Plugins_ThreepeatAnimTools_Source_ThreepeatAnimTools_Public_CurveEditorAlignToLastKeyFilter_h__Script_ThreepeatAnimTools_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Projects_UE56_TatoolsDev_Plugins_ThreepeatAnimTools_Source_ThreepeatAnimTools_Public_CurveEditorAlignToLastKeyFilter_h__Script_ThreepeatAnimTools_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
-// End Registration
+// ********** End Registration *********************************************************************
+
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

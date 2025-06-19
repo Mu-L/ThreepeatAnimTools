@@ -110,7 +110,7 @@ void UCurveEditorAlignToLastKeyFilter::ApplyFilter_Impl(TSharedRef<FCurveEditor>
 
 		// Get all keys that exist between the time range
 		KeyHandles.Reset();
-		Curve->GetKeys(*InCurveEditor, MinKey, MaxKey, TNumericLimits<double>::Lowest(), TNumericLimits<double>::Max(), KeyHandles);
+		Curve->GetKeys(MinKey, MaxKey, TNumericLimits<double>::Lowest(), TNumericLimits<double>::Max(), KeyHandles); //GetKeys(*InCurveEditor, MinKey, MaxKey, TNumericLimits<double>::Lowest(), TNumericLimits<double>::Max(), KeyHandles);
 
 		if ((/*!bUseSlope &&*/ (KeyHandles.Num() >= 2)) || (KeyHandles.Num() > 2))
 		{
